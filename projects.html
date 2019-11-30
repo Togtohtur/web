@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+	<title>Projects | Togtokhtur Batbold</title>
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+</head>
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left">
+				<div class="name">
+					<a href="index.html">Togtokhtur Batbold</a>
+				</div>
+			</div>
+
+			<div class="right">
+				<div class="nav-link-wrapper">
+					<a href="index.html">About</a>
+				</div>
+				
+				<div class="nav-link-wrapper">
+					<a href="resume.html">Resume</a>
+				</div>
+				<div class="nav-link-wrapper">
+					<a href="projects.html">Projects</a>
+				</div>
+			</div>
+		
+		</div>
+
+
+		<div class = "content-project">
+		
+		<div class="havetoadd">*Will have to add old and new projects bit by bit.</div>
+
+		
+		<h2 class="project-titles">Crow Attack!</h2>
+		<div class="proj-row" style=" border-bottom: 1px solid #cccccc;">
+			<div class="pro-descriptions"> 
+			Crow Attack! is a Kinect game where you pose and move in various positions to control the main character. Players can gain points by attacking people within a set period of time. Each character has a different difficulty level, so finding and choosing your opponents carefully is an important gameplay element.<br><br>
+			<i>Tasks:<br><br>
+			
+				<li>Models and animation of all environment and character assets</li>
+				<li>Programming UI elements and gameplay design.</li>
+			</i>
+			<br><br></div>
+			<div class="pro-image">
+					<img src="images/Crow.png"  style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+		</div>
+
+
+
+		<h2 class="project-titles">Visualization of Stone Tool Assembly</h2>
+		<div class="proj-row" style=" border-bottom: 1px solid #cccccc;">
+			<div class="pro-descriptions"> 
+			This is a mobile augmented reality application designed to speed the progress of stone tool assembly, which is an oft repeated process in the study of archeology. By recognizing the select stones, the joining order is displayed to the user.<br><br>
+			<i>Tasks:
+				<ul>
+					<li></li>
+				</ul>
+			</i>
+			<br><br></div>
+			<div class="pro-image">
+					<img src="images/Visualization2.png"  style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+		</div>
+
+
+
+		<h2 class="project-titles">Khalkhin-Gol : History Education in VR</h2>
+		<div class="proj-row">
+			<div class="pro-descriptions"> 
+			Khalkhin-Gol is a Virtual Reality experience wherein you can view the events of one of the most important periods in Mongolian history. With virtual museum and multiple battlefield environments, it is designed for students to take interest in, and learn more about history.<br><br>
+			<i>Tasks:
+				<ul>
+					<li>Modelled and animated all environment and character assets</li>
+					<li>Programming UI elements, all movement and character interaction.</li>
+					<li>Programmed the trigger system for all interactable environment objects, sound and animation</li>
+				</ul>
+			</i>
+			<br><br></div>
+			<div class="pro-image">
+					<img src="images/VR2.png"  style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+		</div>
+
+
+
+
+	</div>
+<div class="footer"> &copy; 2019
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/Visualization235.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img_lights_wide.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+body {
+  font-family: Candara;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin: 0px;
+  border-bottom: 1px solid gray;
+}
+
+.right {
+  display: flex;
+}
+
+.nav-wrapper>.right>div {
+  margin-right: 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+
+}
+
+.name {
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.name a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link-wrapper {
+  height: 10px;
+  transition: border-bottom 0.2s;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+  font-size: 1.2em;
+}
+
+.nav-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: #ff7800;
+
+}
+
+.container {
+  padding-top: 0px;
+  margin: auto;
+  max-width: 1240px;
+}
+
+.name {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+
+/*Projects*/
+.content-project {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.havetoadd {
+  text-align: center;
+  padding-top:50px;
+  padding-bottom:50px;
+  margin-bottom: 30px;
+  border: 1px dashed grey;
+}
+
+.pro-descriptions{
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  min-width: 300px;
+  height:auto;
+  text-align: justify;
+  padding-right: 30px;
+}
+.pro-image{ 
+  
+  display: inline-block;
+  max-width: 362px;
+  padding-bottom: 20px;
+}
+
+.project-titles{
+	display: block;
+	margin:0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+
+/*Resume*/
+.content-resume {
+  width: 100%;
+  max-width: 777px;
+  margin: 0 auto;
+  padding: 30px;
+
+  font-size: 1em;
+}
+
+.titles {
+  display: flex;
+  padding: 5px;
+  padding-bottom: 15px;
+  height: 30px;
+  margin: 0px;
+}
+
+.titles>img {
+  height: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.titles-text {
+  font-size: 1.35em;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.tables {
+  padding-bottom: 8px;
+}
+.tables-cl-o{
+  position: flex;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin:0;
+  padding-right: 50px;
+
+}
+.tables-cl-t{
+	display: inline-block;
+	
+	position: relative;
+	margin:0;
+	text-align: left;
+	width:60%;
+}
+.tables-cl-prof-o{
+  position: flex;
+  display: inline-block;
+  float: left;
+  width: 15%;
+  margin:0;
+  padding-right: 0px;
+}
+.tables-cl-prof-t{
+	display: inline-block;
+	
+	position: relative;
+	margin:0;
+	text-align: left;
+	width:70%;
+}
+.tables-row{
+	padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+.lower-container {
+  margin-bottom: 100px;
+  margin-top: 300px;
+  height: 300px;
+	padding-top: 110px;
+	padding-bottom: 50px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 200px;
+}
+.profile-image-wrapper {
+	
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-left: 50px;
+  margin-right: 80px;
+  margin-bottom: 25px;
+
+}
+
+.profile-image-wrapper img {
+  height: 300px;
+}
+.profile-image-wrapper .img-top {
+  display: none;
+  position: absolute;
+  width:100%;
+  height: 300px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.profile-image-wrapper:hover .img-top {
+  display: inline;
+}
+
+
+
+.profile-text-wrapper {
+  text-align: justify;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+.profile-right-upper {
+
+  padding-top: 12px;
+  vertical-align: center;
+  padding-bottom: 10px;
+  width: 100%;
+
+}
+
+.profile-right-lower {
+
+  margin: 5px;
+  padding-left: 90px;
+  position: relative;
+  width: 120px;
+  padding-bottom:50px;
+
+
+}
+
+.profile-right-upper a {
+  color: grey;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.profile-right-upper a:hover {
+  color: #ff7800;
+}
+
+.Button {
+
+  text-decoration: none;
+  color: black;
+}
+
+.fa {
+  padding: 2px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.Button:hover .fa {
+  background: #ff7800;
+}
+
+.Button:hover {
+  color: #ff7800;
+}
+
+.fa-linkedin {
+  background: #8a8a8a;
+  color: white;
+}
+
+.fa-instagram {
+  background: #8a8a8a;
+  color: white;
+}
+
+
+
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+  font-size: 15px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid grey;
+  width: 100%;
+}
+.print{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	height: 50px;
+}
+.print img{
+	height: 100%;
+}
+.print:hover{
+	background-color: orange;
+}
+
+#my {
+  zoom: 500%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+   background: rgba(0, 0, 0, 0.9);
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 777px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+    opacity: 80%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.1s;
+  width:100px;
+
+}
+
+.hover-shadow:hover {
+  box-shadow: 5px orange);
+  opacity: 75%;
+}
