@@ -617,9 +617,27 @@ width:100%;
   text-align: justify;
   
 }
-.pro-descriptions{
+.proj-row{
   width:100%;
 }
+.pro-descriptions{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.pro-image img{
+   height: 100%
+   max-width: 100%;
+}
+.pro-image {
+   width: 100%;
+   max-width: 100%;
+}
+
+
+
+
+
 .content-resume{
   width: 100%;
   padding-left: 0px;
