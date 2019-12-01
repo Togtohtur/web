@@ -581,11 +581,28 @@ img.hover-shadow {
 
 	  display: block;
 	  float:left; margin:0;
+
+		width: 100%;
+		padding-bottom: 20px;
 	}
 	.profile-image-wrapper img{
-		
-	  height: 100%;
+		width: 100%;
+		height: auto;
 	}
+
+	.profile-image-wrapper .img-top {
+
+		height: auto;
+	}
+	.lower-container{
+		padding-top: 50px;
+	}
+
+
+
+
+
+
 .content-resume{
 	width: 100%;
 }
@@ -598,5 +615,8 @@ img.hover-shadow {
 	}
 	.pro-image{
 		height: 100%;
+
+  max-width: 100%;
+  padding-bottom: 20px;
 	}
 }
