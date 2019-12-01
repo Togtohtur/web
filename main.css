@@ -542,10 +542,37 @@ img.hover-shadow {
 
 
 
-
-
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+
+.left {
+	  display: block;
+
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5px;
+	}
+
+	.right {
+	  display: block;
+
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+	}
+	.nav-wrapper {
+  display: block;
+
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  margin: 0px;
+  border-bottom: 1px solid gray;
+}
+.nav-link-wrapper{
+
+  display: inline-flex;
+  width:20%;
+}
+
 }
