@@ -104,6 +104,7 @@ body {
   margin:0px;
   margin-top: 15px;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 
@@ -659,6 +660,13 @@ img.hover-shadow {
   padding-bottom: 5px;
 }
 
+.project-titles{
+  text-align: center;
+}
+.havetoadd {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
 
 
