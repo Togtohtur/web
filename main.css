@@ -539,3 +539,13 @@ img.hover-shadow {
   overflow: hidden;
   transition: max-height 0.3s linear;
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
