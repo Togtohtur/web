@@ -578,7 +578,7 @@ img.hover-shadow {
 
 	.profile-image-wrapper{
 		margin: auto;
-		
+
 	  display: block;
 	  float:left; margin:0;
 	}
@@ -586,7 +586,9 @@ img.hover-shadow {
 		
 	  height: 100%;
 	}
-
+.content-resume{
+	width: 100%;
+}
 
 	.container{
 		width: 100%;
