@@ -600,6 +600,11 @@ img.hover-shadow {
 
 
 
+.fixedwidth {
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 
 
