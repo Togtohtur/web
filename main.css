@@ -123,9 +123,18 @@ body {
 .titles {
   display: flex;
   padding: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   height: 30px;
   margin: 0px;
+
+  font-size: 1.2em;
+  font-family: Candara;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: white;
 }
 
 .titles>img {
@@ -135,7 +144,6 @@ body {
 }
 
 .titles-text {
-  font-size: 1.35em;
 
   margin-top: auto;
   margin-bottom: auto;
@@ -147,9 +155,6 @@ body {
   padding: 0px;
 }
 
-.tables {
-  padding-bottom: 8px;
-}
 .tables-cl-o{
   position: flex;
   display: inline-block;
@@ -337,6 +342,7 @@ body {
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
+  padding-bottom: 8px;
   top: 50%;
   right: 100%;
   margin-top: -5px;
@@ -373,9 +379,6 @@ body {
 #my {
   zoom: 500%;
 }
-
-
-
 
 
 
@@ -521,4 +524,18 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 5px orange);
   opacity: 75%;
+}
+
+
+
+
+.titles:hover {
+  background-color: white;
+}
+
+.content {
+  padding: 0 10px;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s linear;
 }
