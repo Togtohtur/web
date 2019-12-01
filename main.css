@@ -597,33 +597,30 @@ img.hover-shadow {
 	.lower-container{
 		padding-top: 50px;
 	}
+.content-project{
+  width: 100%;
+}
+.tables-row{
+  width: 100%;
 
+  display: block;
+}
+.tables-cl-o{
+  width:100%;
+  display: block;
+}
+}
+.tables-cl-t{
 
-
-
+  display: block;
+width:100%;
+  text-align: justify;
+  
+}
 
 .content-resume{
 	width: 100%;
+  padding-left: 0px;
+  padding-right: 0;
 }
-.row{
-	width:100%;
-}
-.content{
-	width:100%;
-}
-.tables-row{
-	width:100%;
-}
-	.container{
-		width: 100%;
-	}
-	.pro-descriptions{
-		width: 100%
-	}
-	.pro-image{
-		height: 100%;
-
-  max-width: 100%;
-  padding-bottom: 20px;
-	}
 }
