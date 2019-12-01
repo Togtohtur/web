@@ -606,7 +606,15 @@ img.hover-shadow {
 .content-resume{
 	width: 100%;
 }
-
+.row{
+	width:100%;
+}
+.content{
+	width:100%;
+}
+.tables-row{
+	width:100%;
+}
 	.container{
 		width: 100%;
 	}
