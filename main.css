@@ -574,5 +574,13 @@ img.hover-shadow {
   display: inline-flex;
   width:20%;
 }
+.profile-image-wrapper img{
+	
+  width: 100%;
+  display: block;
+
+
+
+}
 
 }
