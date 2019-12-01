@@ -4,6 +4,10 @@
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+
+
+
 </head>
 <body>
 	<div class="container">
@@ -31,11 +35,16 @@
 		<div class="content-resume">
 			
 			<div class="row" id="education" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
-						<img src="images/Education.png">
-						<h3 class="titles-text">Education</h3>
-				</div>
-				<div class="tables">
+				
+
+				<button class="titles">
+
+							<img src="images/Education.png">
+							<h3 class="titles-text">Education</h3>
+				</button>
+
+
+				<div class="content"> 
 					<div class="tables-row">
 						<p class="tables-cl-o">
 							<i>Apr 2018 – Mar 2020 (expected)</i>
@@ -85,11 +94,11 @@
 
 
 			<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Employment.png">
 						<h3 class="titles-text">Other Employment</h3>
-				</div>
-				<div class="tables">
+				</button>
+				<div class="content"> 
 					<div class="tables-row">
 						<p class="tables-cl-o">
 							<i>Aug 2018 – present</i>
@@ -142,12 +151,12 @@
 
 
 			<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Language.png">
 						<h3 class="titles-text">Language Skills</h3>
-				</div>
+				</button>
 
-				<div class="tables">
+				<div class="content">
 					<div class="tables-row">
 						<p class="tables-cl-o">
 							<img src="images/English.png" width="15px;" style="margin:0; padding-top: 1px; padding-right: 6px;">English 
@@ -190,11 +199,11 @@
 			</div>
 
 			<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Education.png">
 						<h3 class="titles-text">Technical Experience</h3>
-				</div>
-				<div class="tables">
+				</button>
+				<div class="content">
 					<div class="tables-row">
 						<p class="tables-cl-o">	
 						Autodesk Maya| 3ds Max<br>
@@ -222,11 +231,11 @@
 			</div>
 
 			<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Education.png">
 						<h3 class="titles-text">Volunteer</h3>
-				</div>
-				<div class="tables">
+				</button>
+				<div class="content">
 					<div class="tables-row">
 						<p class="tables-cl-prof-o">
 							Jun 2017
@@ -252,11 +261,11 @@
 			</div>
 
 			<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Education.png">
 						<h3 class="titles-text">Qualifications and Awards</h3>
-				</div>
-				<div class="tables">
+				</button>
+				<div class="content">
 					<div class="tables-row">
 						<p class="tables-cl-prof-o">
 							Jun 2017
@@ -278,11 +287,11 @@
 
 			</div>
 			<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Education.png">
 						<h3 class="titles-text">Publications</h3>
-				</div>
-				<div class="tables">		
+				</button>
+				<div class="content">		
 					<ul><li>A Study of Finding Target Objects for Visualizing Stone Tool Assembly
 					<br><i>2018 Nicograph International (NicoInt), Tainan, 2018, pp. 13-15.</i></li>
 					</ul>
@@ -290,26 +299,31 @@
 			</div>
 
 			<div class="row" id="Interests" style=" border-bottom: 1px solid #cccccc;">
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Education.png">
 						<h3 class="titles-text">Interests</h3>
-				</div>
-				<div class="tables">		
+				</button>
+				<div class="content">		
 					
+					<div class="tables-row">
+						<p class="tables-cl-prof-t">
+							
 					UX | User Experience Design<br>
 					UI | User Interface Design<br>
 					Augmented / Virtual Reality<br>
 					Game Design<br>
 					Interaction Design<br>
+						</p>
+					</div>
 				</div>
 			</div>
 
 			<div class="row" id="Hobbies" >
-				<div class="titles">
+				<button class="titles">
 						<img src="images/Hobbies.png">
 						<h3 class="titles-text">Hobbies</h3>
-				</div>
-				<div class="tables">		
+				</button>
+				<div class="content">		
 					<div class="tables">
 					<div class="tables-row">
 						<p class="tables-cl-prof-o">
@@ -346,6 +360,32 @@
 	</div>
 
 
+<script>
+var coll = document.getElementsByClassName("titles");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+
+
+
+
+    var content = this.nextElementSibling;
+
+
+//content.scrollHeight + "px"
+
+
+    if (content.style.maxHeight != "0px"){
+      content.style.maxHeight = "0px";
+    } else {
+      content.style.maxHeight = "500px";
+    } 
+  });
+}
+</script>
 
 </body>
 
