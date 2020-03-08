@@ -1,5 +1,6 @@
 body {
   font-family: Candara;
+  background-color: white;
 }
 
 .nav-wrapper {
@@ -22,7 +23,11 @@ body {
 
 }
 
+a{
+  color:white;
 
+  text-decoration: none;
+}
 .name a {
   color: black;
   text-decoration: none;
@@ -196,17 +201,22 @@ body {
 
 
 
-
-
 .lower-container {
-  margin-bottom: 100px;
-  margin-top: 300px;
-  height: 300px;
-  padding-top: 110px;
-  padding-bottom: 50px;
-  width: 80%;
-  margin: 0 auto;
-  min-width: 200px;
+  font-weight: bold;
+ color: #234865;
+  font-size: 14pt;
+  position: absolute;
+  width: 420px;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+  text-align: justify;
+
+    text-align-last: center;
+
 }
 .profile-image-wrapper {
   
@@ -248,7 +258,18 @@ body {
   padding-bottom: 15px;
 }
 
+.Batbold{
+  display: inline;
+  color: white; 
+  font-weight: bold;
+  width: 100%;
+  font-size: 30pt;
+  text-shadow: 2px 2px 4px #000000;
 
+}
+.Batbold:hover{
+  cursor: default;
+}
 
 .profile-right-upper {
 
@@ -280,11 +301,6 @@ body {
   color: #ff7800;
 }
 
-.Button {
-
-  text-decoration: none;
-  color: black;
-}
 
 .fa {
   padding: 2px;
@@ -295,25 +311,24 @@ body {
   margin: 5px 2px;
 }
 
-.Button:hover .fa {
-  background: #ff7800;
+
+.linked{
+  display: inline-block;
+  border-color: white;
+  width: 150px;
+  height: auto;
+  border-style: solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+
 }
 
-.Button:hover {
-  color: #ff7800;
+.linked:hover{
+  background-color: white;
+  color:#234865;
+  
 }
-
-.fa-linkedin {
-  background: #8a8a8a;
-  color: white;
-}
-
-.fa-instagram {
-  background: #8a8a8a;
-  color: white;
-}
-
-
 
 
 
@@ -321,7 +336,6 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
@@ -334,21 +348,9 @@ body {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: 110%;
+  top: -150%;
+  right: -3px;
   font-size: 15px;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  padding-bottom: 8px;
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent black transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {
