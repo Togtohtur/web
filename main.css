@@ -6,6 +6,7 @@ font-family: "Century Gothic", sans-serif;
   font-style: normal;
   background-color: white;
   margin: 0; padding: 0; 
+  text-decoration: none
 }
 
 .nav-wrapper {
@@ -27,6 +28,9 @@ font-family: "Century Gothic", sans-serif;
   color: black;
   background-color: White;
 }
+
+
+
 .right {
   display: flex;
 }
@@ -277,6 +281,7 @@ transition: 0.2s;
 width: 48%;
 text-align: right;
   transition: 1s;
+  padding-right: 50px;
 }
 
 @keyframes slideInFromLeft {
@@ -396,7 +401,6 @@ text-align: right;
 
 
 .lower-container {
-  font-family:'Century Gothic','Futura',san-serif;
  color: #FFFFFF;
   font-size: 30pt;
   position: absolute;
@@ -592,11 +596,13 @@ transition: 0.4s;
     top:0;
     left:0;
     z-index: 1;
+    padding-left: 10px;
     opacity: 0;
 }
 .LinkedIn_hover:hover{
 opacity: 100%;
 transition: 0.4s;
+cursor: pointer;
 }
 
 
