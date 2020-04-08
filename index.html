@@ -5,22 +5,68 @@
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+	<script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
-<body style="background-color:#96c1b7;">
-		<div class="lower-container">
-			<h1 ><div class="Batbold">BATBOLD TOGTOKHTUR</div></h1>
-				Hello, I'm Toto!
-				I'm a multidisciplinary designer currently living in Japan.
-				Here, you can check out my <a href="resume.html">resume</a> , as well as a few <a href="projects.html">projects</a> I've worked on. 
-				<br>
-				<br>
-				Contact me at : <a href="mailto:togtohturb@gmail.com" target="_top">togtohturb@gmail.com</a><br><br>
-				Or, look me up on: <br>
+<body >
 
-<a href="https://www.linkedin.com/in/togtokhtur-batbold-a21518165/" target="_blank" >
-				<div class="linked">LinkedIn</div></a>
+		
+
+		<video height="100%" width="auto" autoplay loop muted>
 			
-	</div>
+  			<source src="videos/index/Index.mp4" type="video/mp4">
+
+		</video>
+		
+		<div class="lower-container">
+			<div class="mainparts">
+				<div class="clickableLinks"  style=" margin-top: 25px;margin-bottom: 60px;padding-right: 0">
+					<a style="position: relative; display: inline-block;" href="https://www.facebook.com/togtohtur" target="_blank" >
+						<div class="facebook"></div>
+						<div class="facebook_hover"><img src="images/facebook_hover.png "  draggable="false" style="height:30px;"></div>
+					</a>
+					<a style="position: relative; display: inline-block;" href="https://www.linkedin.com/in/togtokhtur-batbold-a21518165/" target="_blank" >
+						<div class="LinkedIn"></div>
+						<div class="LinkedIn_hover"><img src="images/LinkedIn_hover.png "  draggable="false" style="height:30px;"></div>
+					</a>
+				</div>
+				<p class="clickableLinks"  style="font-size: 30pt; padding: 0; margin: 0;">BATBOLD TOGTOKHTUR</p>
+				<div class="clickableLinks" style="padding-right: 0; padding-top: 0;">
+					<p style="font-size: 18pt; padding: 0; margin-top: 5;margin-bottom: 80">
+						3DCG | Design | Code
+					</p>
+				</div>
+				<div style="width: 300px;height: 100px; display: inline-block; overflow: hidden;">
+					<div class="clickableLinks" ><a href="resume.html">RESUME</a></div>
+					<div class="clickableLinks" ><a href="projects.html">PROJECTS</a></div>
+					
+				</div>
+				<div class="Vline"></div>
+			</div>
+				
+
+			
+		</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>  <script type="text/javascript" charset="utf-8">
+$(function() { $('body').hide().show(); });
+</script>
+
+<script>
+var delay = 0;
+$('.clickableLinks:lt(16)').each(function() {
+  $(this).delay(delay).animate({
+    opacity: 100
+
+  }, 500);
+  delay += 150;
+});
+</script>
+
+
 </body>
 
 </html>

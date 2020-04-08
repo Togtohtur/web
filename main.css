@@ -1,53 +1,142 @@
+
 body {
-  font-family: Candara;
+  
+font-family: "Century Gothic", sans-serif;
+ font-weight: 400;
+  font-style: normal;
   background-color: white;
+  margin: 0; padding: 0; 
 }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
   margin: 0px;
-  border-bottom: 1px solid gray;
+  border: none;
+  background-color: #282828;
 }
-
+.nav-wrapper-resume{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  border: none;
+  color: black;
+  background-color: White;
+}
 .right {
   display: flex;
 }
-
+.project-titles{
+  text-align: center;
+   display: block;
+  padding:9px;
+  text-align: left;
+  color: #2c3138;
+}
 .nav-wrapper>.right>div {
   margin-right: 20px;
   font-size: 1em;
   text-transform: uppercase;
 
 }
-
+.mainparts a{
+  color: #FFFFFF;
+}
 a{
-  color:white;
+  color:black;
 
   text-decoration: none;
 }
 .name a {
+  color: white;
+  text-decoration: none;
+}
+.name-resume{
   color: black;
   text-decoration: none;
 }
 
 .nav-link-wrapper {
-  height: 10px;
+  height: 7px;
   transition: border-bottom 0.2s;
 }
 
 .nav-link-wrapper a {
-  color: #8a8a8a;
+  color: white;
   text-decoration: none;
   transition: color 0.5s;
   font-size: 1.2em;
 }
 
-.nav-wrapper:hover {
-  border-bottom: 1px solid black;
+.HeaderText{
+    display: inline-block;
+    left: 50%;
+    width: 100%;
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
 }
+
+.project_thumbnails{
+  background-size: cover;
+  background-color: white;
+  opacity: 0;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+
+    font-size: 12pt;
+  overflow: hidden;
+  transition: 1s;
+}
+.Text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 10;
+  text-align: center;
+}
+.project_thumbnails:hover .Text{
+opacity: 100%;
+transition: 0.2s;
+}
+.BackgroundImage{
+  width: 100%;
+}
+.project_thumbnails:hover .BackgroundImage{
+transition: 0.2s;
+  transform: scale(1.2);
+  opacity: 40%;
+  background-color: white;
+}
+
+#CrowImage{
+
+}
+
+
+.subsections{padding: 20px;
+  background-color: #ffe8da;
+  color: black;
+  font-size: 16pt;
+  margin: 0;
+}
+.resumehead{
+  margin-bottom: 70;
+}
+
+.contentpics{
+  font-size: 0;
+}
+
 
 .nav-link-wrapper a:hover {
   color: #ff7800;
@@ -58,12 +147,22 @@ a{
   padding-top: 0px;
   margin: auto;
   max-width: 1240px;
+
+}
+.container-projects {
+  padding-top: 0px;
+
+    font-size: 0;
+  border: none;
+  margin: auto;
+  max-width: 1170px;
+   -moz-transform: translateX(-50%) translateY(-50%);
 }
 
 .name {
   font-size: 1.4em;
   text-transform: uppercase;
-  font-weight: bold;
+  
 
   margin-left: 20px;
   padding: 0px;
@@ -72,13 +171,28 @@ a{
 
 
 
-/*Projects*/
-.content-project {
+
+
+.Projects-Header-Image{
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
+
+
+.Projects-Header{
+  background-color: white;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+/*Projects*/
 
 .havetoadd {
   text-align: center;
@@ -104,13 +218,85 @@ a{
   padding-bottom: 20px;
 }
 
-.project-titles{
-  display: block;
-  margin:0px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: left;
+
+
+.content-project{
+  width: 100%;
+  padding-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  outline: 0;
+  border:0;
+  padding-top: 0px;
+  margin: auto;
+  max-width: 900px;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.clickableLinks{
+  font-size: 24.5pt; 
+  padding-right: 15px;
+  padding-top: 5px;
+  transition: 1s;
+
+  opacity: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.clickableLinks a{
+  color: white;
+  
+}
+.clickableLinks:hover a{
+  color: orange;
+  transition: color 0.4s;
+}
+.link_buttons:hover a{
+  color: orange;
+  transition: 0.4s;
+}
+.link_buttons{
+  color: white;
+  margin-top: 25px;margin-bottom: 25px
+}
+
+.mainparts{
+  margin-top: 10;
+width: 48%;
+text-align: right;
+  transition: 1s;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    height:0;
+  }
+  100% {
+    height:100;
+  }
+}
+.Vline{
+  border-right: 2px solid white; height: 100px;
+  display: inline-block;float: right;
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+
+
+
+
 
 
 
@@ -121,15 +307,16 @@ a{
   max-width: 777px;
   margin: 0 auto;
   padding: 30px;
-
+  padding-top: 0;
   font-size: 1em;
 }
 
 .titles {
   display: flex;
   padding: 5px;
-  padding-bottom: 40px;
-  height: 30px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  height: 5px;
   margin: 0px;
 
   font-size: 1.2em;
@@ -161,7 +348,6 @@ a{
 }
 
 .tables-cl-o{
-  position: flex;
   display: inline-block;
   float: left;
   width: 25%;
@@ -171,11 +357,17 @@ a{
 }
 .tables-cl-t{
   display: inline-block;
-  
-  position: relative;
+   float: left;
   margin:0;
   text-align: left;
-  width:60%;
+  width:50%;
+  padding-bottom: 10px;
+}
+.tables-cl-th{
+  display: inline-block;
+  float: left;
+  margin:5px;
+  width:8%;
 }
 .tables-cl-prof-o{
   position: flex;
@@ -192,30 +384,31 @@ a{
   margin:0;
   text-align: left;
   width:70%;
-}
-.tables-row{
+
   padding-bottom: 10px;
 }
 
+.vertical_line{
+  border
+}
 
 
 
 
 .lower-container {
-  font-weight: bold;
- color: #234865;
-  font-size: 14pt;
+  font-family:'Century Gothic','Futura',san-serif;
+ color: #FFFFFF;
+  font-size: 30pt;
   position: absolute;
-  width: 420px;
+  width: 100%;
     top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 
-  text-align: justify;
+  text-align: right;
 
-    text-align-last: center;
 
 }
 .profile-image-wrapper {
@@ -358,33 +551,60 @@ a{
 }
 
 .footer {
-  text-align: center;
+  text-align: right;
   margin-top: 30px;
+  margin-right: 30px;
   padding-top: 5px;
-  padding-bottom: 5px;
-  border-top: 1px solid grey;
+  padding-bottom: 10px;
   width: 100%;
 }
-.print{
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  height: 50px;
+
+.facebook{
+  background: url("images/facebook.png") no-repeat;
+  height:30px;
+  width: 30px;
+  background-size: 100%;
+  position: relative;
+  z-index: 0;
 }
-.print img{
-  height: 100%;
+.facebook_hover{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    opacity: 0;
 }
-.print:hover{
-  background-color: orange;
+.facebook_hover:hover{
+opacity: 100%;
+transition: 0.4s;
 }
+.LinkedIn{
+  background: url("images/LinkedIn.png") no-repeat;
+  height:30px;
+  width: 30px;
+  background-size: 100%;
+  position: relative;
+  z-index: 0;
+  opacity: 100%;
+}
+.LinkedIn_hover{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    opacity: 0;
+}
+.LinkedIn_hover:hover{
+opacity: 100%;
+transition: 0.4s;
+}
+
+
+
 
 #my {
   zoom: 500%;
 }
-
-
-
-
 
 
 
@@ -536,10 +756,11 @@ img.hover-shadow {
 }
 
 .content {
-  padding: 0 10px;
-  max-height: 500px;
+  padding-top: 35;
+  max-height: 400px;
   overflow: hidden;
   transition: max-height 0.3s linear;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -598,14 +819,15 @@ img.hover-shadow {
     padding-top: 50px;
   }
 .content-project{
-  width: 100%;
-}
-.tables-row{
-  width: 100%;
-
   display: block;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0;
+ 
+  margin: 0px;
+  border: none;
+  max-width: 777px;
 }
-
 .content-resume{
   width: 100%;
   padding-left: 0px;
@@ -617,22 +839,24 @@ img.hover-shadow {
   .lower-container{
     padding-top: 50px;
   }
-.content-project{
-  width: 100%;
-}
+
 .tables-row{
   width: 100%;
-
-  display: block;
+  padding-bottom: 50px;
+  position: relative;
+  margin-bottom: 50px;
 }
 .tables-cl-o{
   display: block;
   width: 100%;
+
 }
 .tables-cl-t{
   display: block;
   width: 100%;
   text-align: justify;
+
+padding-bottom: 59px;
   
 }
 .tables-cl-prof-t{
@@ -662,15 +886,9 @@ img.hover-shadow {
   padding-bottom: 5px;
 }
 
-.project-titles{
-  text-align: center;
-}
+
 .havetoadd {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-
-
-
-}
