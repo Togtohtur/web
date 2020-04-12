@@ -4,12 +4,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 
-	<title>Projects | Togtokhtur Batbold</title>
+	<title>Library | Togtokhtur Batbold</title>
 	<link href="main.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
-<body style="background-image:  linear-gradient(#ffe8da,#df84d5)">
+<body style="background-image:  linear-gradient(#ffe8da,#eaa1e2)">
 	<div class="nav-wrapper">
 			<div class="left">
 				<div class="name">
@@ -23,7 +23,7 @@
 					<a href="resume.html">Resume</a>
 				</div>
 				<div class="nav-link-wrapper">
-					<a href="projects.html">Projects</a>
+					<a href="projects.html">Portfolio</a>
 				</div>
 			</div>
 		
@@ -50,20 +50,22 @@
 			-2019-
 		</div>
 
-		<br>
-		<video id="myvideo" width="100%" autoplay >
+		<div class="contentpics">
+			<img width="50%" style="padding-bottom: 20px;" src="images/Library.png">
+		<video id="myvideo" width="100%" autoplay onclick="this.play()">
 			
   			<source src="videos/Library.mp4" type="video/mp4">
 
 		</video>
-
+</div>
 
 
 </div>
 
 
 	</div>
-<div class="footer"> &copy; 2019
+
+<div id="footer"> &copy;
 	</div>
 
 
@@ -72,6 +74,7 @@
 
 </body>
 
+<script> document.getElementById('myvideo').play(); </script>
+<script>document.getElementById('footer').appendChild(document.createTextNode(new Date().getFullYear()))</script>
 </html>
 
-<script> document.getElementById('myvideo').play(); </script>

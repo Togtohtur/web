@@ -22,7 +22,7 @@
 					<a href="resume.html">Resume</a>
 				</div>
 				<div class="nav-link-wrapper">
-					<a href="projects.html">Projects</a>
+					<a href="projects.html">Portfolio</a>
 				</div>
 			</div>
 		
@@ -39,8 +39,26 @@
 					<p style="display: inline-block;  float: left;   margin:0; padding-right: 30px;">togtohturb@gmail.com </p>
 					<p style="display: inline-block;  float: left;   margin:0; padding-right: 30px;">+81-(080)-7845-8155</p>
 					<p style="display: inline-block;  float: left;   margin:0; padding-right: 30px;">Iwate Pref., Japan</p>
+				</div>
+				
+				<div class="row" id="employment" style=" border-bottom: 1px solid #cccccc;">
+				<button class="titles">
+						<img src="images/Education.png">
+						<h3 class="titles-text">Summary</h3>
+				</button>
+				<div class="content">
+					<div class="tables-row">
+						Multi-discipline designer with particular focus on integration and synergy of eye catching design and new technologies. With exceptional collaborative spirit; well-developed written and verbal communication abilities. Team player, eager to learn and improve at every opportunity. Graduated in Japan, interested in cross cultural communications and collaboration. Passionate in creative endeavours, and open to challenging environments and tasks.  
+						<br><br>
+					</div>
 					
 				</div>
+
+
+
+
+			</div>
+
 				<button class="titles">
 
 							<img src="images/Education.png">
@@ -56,8 +74,9 @@
 						<p class="tables-cl-t">
 							<strong>Master of Engineering</strong><br>
 							Design and Media Technology<br>
-							<i>Main study: Object Recognition, Computer Vision, Augmented Reality</i><br>
-							<i>Iwate University, Japan</i>
+							<i>Iwate University, Japan</i><br>
+
+							<i>Main study: Object Recognition, Computer Vision</i>
 						</p>
 						<p class="tables-cl-th">
 							<img src="images/Iwate.png"  style="width:100%;">
@@ -70,19 +89,20 @@
 						</p>
 						<p class="tables-cl-t">
 							Research Student<br>
-							<i>Iwate University, Japan</i>
+							<i>Iwate University, Japan</i><br>
 						</p>
 					</div>
 					
 					<div class="tables-row">
 						<p class="tables-cl-o">
 							<i>Sep 2012 – Jun 2017</i>
+
 						</p>
 						<p class="tables-cl-t">
 							<strong>Bachelor of Design</strong><br>
 							Computer Graphics Design<br>
-							<i>Main topic: 3DCG, Virtual Reality</i><br>
-							<i>Mongolian University of Science and Technology , Mongolia</i>
+							<i>Mongolian University of Science and Technology , Mongolia</i><br>
+							<i>Main study: 3DCG, Virtual Reality</i>
 							
 						</p>
 						<p class="tables-cl-th">
@@ -368,8 +388,10 @@
 
 
 	</div>
-<div class="footer"> &copy; 2020
-	</div>
+	<div id="footer">
+		&copy;
+		
+		</div>
 
 <script>
 var coll = document.getElementsByClassName("titles");
@@ -398,6 +420,8 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
+
+<script>document.getElementById('footer').appendChild(document.createTextNode(new Date().getFullYear()))</script>
 </body>
 
 </html>

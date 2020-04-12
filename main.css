@@ -1,13 +1,31 @@
 
 body {
   
-font-family: Candara;
  font-weight: 400;
   font-style: normal;
   background-color: white;
   margin: 0; padding: 0; 
-  text-decoration: none
+  text-decoration: none;
+  
+  font-family: 'gothic';
+
 }
+html {
+    width: 100%;
+    min-height: 100%;
+}
+ 
+@font-face {
+  font-family: 'gothic';
+  src: url('./gothic.eot');
+  src: local('gothic'), url('./gothic.woff') format('woff'), url('./gothic.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
+.index_container {
+  font-family: 'gothic' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
 
 .nav-wrapper {
   display: flex;
@@ -17,6 +35,7 @@ font-family: Candara;
   margin: 0px;
   border: none;
   background-color: #282828;
+   font-family: 'gothic' !important;
 }
 .nav-wrapper-resume{
   display: flex;
@@ -28,7 +47,6 @@ font-family: Candara;
   color: black;
   background-color: White;
 }
-
 
 
 .right {
@@ -46,10 +64,7 @@ font-family: Candara;
   font-size: 1em;
   text-transform: uppercase;
 
-}
-.mainparts a{
-  color: #FFFFFF;
-}
+}s
 a{
   color:black;
 
@@ -76,17 +91,9 @@ a{
   font-size: 1.2em;
 }
 
-.HeaderText{
-    display: inline-block;
-    left: 50%;
-    width: 100%;
-    font-size: 20pt;
-    font-weight: bold;
-    text-align: center;
-}
 
 .project_thumbnails{
-  background-size: cover;
+  background-size: contain;
   background-color: white;
   opacity: 0;
   display: inline-block;
@@ -95,7 +102,7 @@ a{
   position: relative;
   margin: 0 auto;
 
-    font-size: 12pt;
+  font-size: 10pt;
   overflow: hidden;
   transition: 1s;
 }
@@ -116,7 +123,7 @@ transition: 0.2s;
   width: 100%;
 }
 .project_thumbnails:hover .BackgroundImage{
-transition: 0.2s;
+  transition: 0.2s;
   transform: scale(1.2);
   opacity: 40%;
   background-color: white;
@@ -128,10 +135,11 @@ transition: 0.2s;
 
 
 .subsections{padding: 20px;
-  background-color: #ffe8da;
+  background-color: white;
   color: black;
   font-size: 16pt;
   margin: 0;
+  text-align: left;
 }
 .resumehead{
   margin-bottom: 70;
@@ -139,6 +147,10 @@ transition: 0.2s;
 
 .contentpics{
   font-size: 0;
+  width:100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 
@@ -150,19 +162,13 @@ transition: 0.2s;
 .container {
   padding-top: 0px;
   margin: auto;
-  max-width: 1240px;
+  max-width: 999px;
+  
 
 }
-.container-projects {
-  padding-top: 0px;
-
-    font-size: 0;
-  border: none;
-  margin: auto;
-  max-width: 1170px;
-   -moz-transform: translateX(-50%) translateY(-50%);
+.container-projects a{
+  color: black;
 }
-
 .name {
   font-size: 1.4em;
   text-transform: uppercase;
@@ -189,8 +195,7 @@ transition: 0.2s;
 .Projects-Header{
   background-color: white;
     padding: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px; 
 }
 
 
@@ -221,19 +226,57 @@ transition: 0.2s;
   max-width: 362px;
   padding-bottom: 20px;
 }
+.HeaderText .PortfolioImage {
+  animation: slide-up 0.2s;
+  margin-bottom: 100%;
+  user-select: none;
+}
 
+@keyframes slide-up {
+  from {
+    margin-bottom: 100%;
+    opacity: 0;
+  }
 
-
-.content-project{
+  to {
+    margin-bottom: 0%;
+    opacity: 80%;
+  }
+}
+.HeaderText{
+  overflow:hidden;
+  position: sticky;
+  display: inline-block;
+  left: 0;
+  z-index: 1;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  width: 30px;
+  vertical-align: top;
+  max-width: 50px;
+  top: 0;
+}
+.content-projects{
+  display: inline-block;
+  position: relative;
   width: 100%;
-  padding-top: 20px;
+  font-size: 0;
+  z-index: 0;
+  width: 90%;
   max-width: 900px;
   margin: 0 auto;
-  outline: 0;
-  border:0;
-  padding-top: 0px;
-  margin: auto;
-  max-width: 900px;
+  padding-top: 30px;
+}
+
+.container-projects {
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 50px;
+  font-family: 'gothic';
+
 }
 
 #myVideo {
@@ -245,7 +288,7 @@ transition: 0.2s;
 }
 
 .clickableLinks{
-  font-size: 24.5pt; 
+  font-size: 24pt; 
   padding-right: 15px;
   padding-top: 5px;
   transition: 1s;
@@ -273,16 +316,81 @@ transition: 0.2s;
 }
 .link_buttons{
   color: white;
-  margin-top: 25px;margin-bottom: 25px
+  margin-top: 25px;margin-bottom: 25px;
 }
 
-.mainparts{
-  margin-top: 10;
-width: 48%;
-text-align: right;
-  transition: 1s;
-  padding-right: 50px;
+.index_container {
+  color: #FFFFFF;
+  font-size: 30pt;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
+.left_index{
+  width: 48%;
+  height:400px;
+  text-align: right;
+  transition: 1s;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+
+  padding-right: 30px;
+  right:0;
+
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+
+}
+.left_index a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.right_index{
+  width: 48%;
+  height:400px;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  right:0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.tsookhor{
+  position:absolute;
+  display: inline-block;
+  
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+}
+.tsookhor_shadow{
+  width: 400px;
+  height: 400px;
+  background-size: width height;
+  background-repeat: no-repeat;
+  background: url("images/shadow.png");
+  position: relative;
+  z-index: 0;
+  bottom: 0;
+}
+.tsookhor_gif{
+  position: absolute;
+  width: 400px;
+  z-index: 1;
+  bottom: 0;
+}
+
 
 @keyframes slideInFromLeft {
   0% {
@@ -332,7 +440,7 @@ text-align: right;
   margin: 0px;
 
   font-size: 1.2em;
-  font-family: Candara;
+  font-family: Calibri;
   cursor: pointer;
   width: 100%;
   border: none;
@@ -407,21 +515,6 @@ text-align: right;
 
 
 
-.lower-container {
- color: #FFFFFF;
-  font-size: 30pt;
-  position: absolute;
-  width: 100%;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-
-  text-align: right;
-
-
-}
 .profile-image-wrapper {
   
   margin: 0 auto;
@@ -559,16 +652,22 @@ text-align: right;
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-}
 
-.footer {
-  text-align: right;
-  margin-top: 30px;
-  margin-right: 30px;
-  padding-top: 5px;
+}
+#footer {
+  font-family: 'gothic';
+  font-size: 8pt;
+  text-align: center;
+  padding-top:10px;
   padding-bottom: 10px;
   width: 100%;
+  color:white;
+  background-color: #282828;
+  bottom: 0;
+  display: block;
+
 }
+
 
 .facebook{
   background: url("images/facebook.png") no-repeat;
@@ -775,11 +874,8 @@ img.hover-shadow {
   transition: max-height 0.3s linear;
 
 }
-.Tsookhor_video{
-  position: fixed; bottom: 0; right: 0; margin: 0; padding: 0;width:100%;
-}
 .logos{
-  margin-top: 25px;margin-bottom: 75px;padding-right: 0px
+  margin-top: 0;margin-bottom: 75px;padding-right: 0px
 }
 
 .Hline{
@@ -794,25 +890,17 @@ img.hover-shadow {
 margin-bottom: 20;
 }
 .index_description{
-  font-size: 13.2pt; padding: 0; margin-top: 10;margin-bottom: 40;
+  font-size: 13.2pt; padding: 0; margin-top: 10;margin-bottom: 30;
 }
-@media only screen and (max-width: 750px) {
-  .Tsookhor_video{
-    position: fixed; bottom: 60; right: 0; margin: 0; padding: 0;
-
-  }
 
 @media only screen and (max-width: 600px) {
 
-.lower-container{
+.index_container{
   text-align: center;
-     padding-top: 0;
-     margin-top: 0;
-      top: 0%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(0%);
+  top: 0%;
+  -moz-transform: translateX(-50%) translateY(0%);
+  -webkit-transform: translateX(-50%) translateY(0%);
+  transform: translateX(-50%) translateY(0);
 }
 .clickable_links{
   margin-left: 0;
@@ -820,18 +908,30 @@ margin-bottom: 20;
   padding-left: 0;
   padding-right: 0;
 }
-.mainparts{
+.left_index{
   text-align: center;
-  width: 100%;
+
   padding: 0px;
+  padding-top: 0;
+  margin-top: 0;
+  height:500px;
+  }
+.tsookhor_gif{
+  width: 200px;
+}
+.tsookhor_shadow{
+opacity: 0;
+}
 
-     padding-top: 0;
-     margin-top: 0;
-
+.text-index{
+  padding-right: 0;
+  position:absolute;
+  top:0;
+  left:0;
 }
 .logos{
   margin-top: 0px;
-margin-bottom: 8px;
+margin-bottom: 0px;
 
 }
 .Vline{
@@ -840,14 +940,12 @@ margin-bottom: 8px;
 .Hline{
   opacity: 100;
 }
-.Tsookhor_video{
-    position: absolute; bottom: 0;
-  left: -250;
-      width:150%;
-    ; right: 0; margin: 0; padding: 0;
-
+.PortfolioImage{
+  opacity: 0;
 }
-
+.HeaderText{
+  height:0;
+}
 
   .left {
     display: block;
@@ -898,19 +996,7 @@ margin-bottom: 8px;
 
     height: auto;
   }
-  .lower-container{
-    padding-top: 50px;
-  }
-.content-project{
-  display: block;
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 0;
- 
-  margin: 0px;
-  border: none;
-  max-width: 777px;
-}
+
 .content-resume{
   width: 100%;
   padding-left: 0px;
@@ -918,10 +1004,6 @@ margin-bottom: 8px;
 }
 
 
-
-  .lower-container{
-    padding-top: 50px;
-  }
 
 .tables-row{
   width: 100%;
@@ -975,3 +1057,9 @@ padding-bottom: 59px;
   padding-bottom: 80px;
 }
 
+.right_index{
+opacity:0;
+}
+body{
+  width: 100%
+}
