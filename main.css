@@ -129,8 +129,15 @@ transition: 0.2s;
   background-color: white;
 }
 
-#CrowImage{
-
+.stone_text{
+  font-size: 12pt;
+  width: 35%;
+  display: inline-block;
+  text-align: left;
+  float: top;
+  background-color: white;
+    padding: 30px;
+    margin-top: 30px; 
 }
 
 
@@ -893,7 +900,7 @@ margin-bottom: 20;
   font-size: 13.2pt; padding: 0; margin-top: 10;margin-bottom: 30;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
 .index_container{
   text-align: center;
@@ -902,6 +909,7 @@ margin-bottom: 20;
   -webkit-transform: translateX(-50%) translateY(0%);
   transform: translateX(-50%) translateY(0);
 }
+
 .clickable_links{
   margin-left: 0;
   margin-right: 0;
@@ -910,11 +918,18 @@ margin-bottom: 20;
 }
 .left_index{
   text-align: center;
+position: relative;
 
   padding: 0px;
-  padding-top: 0;
+  padding-top: 20%;
   margin-top: 0;
-  height:500px;
+width: 100%;
+    display: inline-block;
+  }
+  .right_index{
+    height:0;
+    width: 0;
+    display: inline-block;
   }
 .tsookhor_gif{
   width: 200px;
@@ -1058,8 +1073,19 @@ padding-bottom: 59px;
 }
 
 .right_index{
-opacity:0;
+opacity: 0;
+position: relative;
 }
-body{
-  width: 100%
-}
+.tsookhor{
+  height:0;
+ }
+.tsookhor_shadow{
+  height:0;
+ }
+.tsookhor_gif{
+  height:0;
+ 
+ }
+ .body{
+  height: 100vh;
+ }
