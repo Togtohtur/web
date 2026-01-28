@@ -877,7 +877,7 @@ img.hover-shadow {
 
 .content {
   padding-top: 35;
-  max-height: 600px;
+  max-height: 1000px;
   overflow: hidden;
   transition: max-height 0.3s linear;
 
@@ -1097,4 +1097,5 @@ position: relative;
   height: 100vh;
  }
 }
+
 
